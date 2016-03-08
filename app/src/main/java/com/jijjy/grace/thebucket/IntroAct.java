@@ -1,5 +1,6 @@
 package com.jijjy.grace.thebucket;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 
@@ -16,37 +17,28 @@ public class IntroAct extends IntroActivity {
 
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.app_name)
-                .description(R.string.description)
-                .image(R.drawable.pb2)
-                .background(R.color.black)
-                .backgroundDark(R.color.Purple)
+                .description(R.string.welcome)
+                .image(R.drawable.cool)
+                .background(R.color.green)
+//                .backgroundDark(R.color.Purple)
                 .build());
 
 
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.app_name)
                 .description(R.string.description2)
-                .image(R.drawable.pb1)
-                .background(R.color.Pink)
-                .backgroundDark(R.color.Purple)
+                .image(R.drawable.skydive)
+                .background(R.color.green)
+//                .backgroundDark(R.color.Purple)
                 .build());
 
 
         addSlide(new SimpleSlide.Builder()
                 .title(R.string.app_name)
                 .description(R.string.description3)
-                .image(R.drawable.pb3)
-                .background(R.color.black)
-                .backgroundDark(R.color.Purple)
-                .build());
-
-
-        addSlide(new SimpleSlide.Builder()
-                .title(R.string.app_name)
-                .description(R.string.description4)
-                .image(R.drawable.pb4)
-                .background(R.color.Purple)
-                .backgroundDark(R.color.Purple)
+                .image(R.drawable.join)
+                .background(R.color.green)
+//                .backgroundDark(R.color.Purple)
                 .build());
 
         setFullscreen(true);
@@ -69,5 +61,11 @@ public class IntroAct extends IntroActivity {
             public void onPageScrollStateChanged(int state) {
             }
         });
+    }
+
+    @Override
+    protected void onStop() {
+        startActivity(new Intent(getBaseContext(), Main.class));
+        super.onStop();
     }
 }

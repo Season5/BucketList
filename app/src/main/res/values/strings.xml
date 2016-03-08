@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">TheBucket</string>
+    <string name="app_name">The Bucket</string>
+    <string name="welcome">Welcome!</string>
+    <string name="description"></string>
+    <string name="description2">What do you want to do before you die?</string>
+    <string name="description3">Join us in making life rock!</string>
 </resources>
