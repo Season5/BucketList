@@ -29,6 +29,6 @@ public class Splash extends Activity {
     @Override
     protected void onStop() {
         super.onStop();
-        isDestroyed();
+        finish();
     }
 }
