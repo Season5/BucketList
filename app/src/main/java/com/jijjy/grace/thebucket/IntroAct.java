@@ -64,8 +64,8 @@ public class IntroAct extends IntroActivity {
     }
 
     @Override
-    protected void onStop() {
+    protected void onDestroy() {
         startActivity(new Intent(getBaseContext(), Main.class));
-        super.onStop();
+        super.onDestroy();
     }
 }
