@@ -15,11 +15,11 @@ public class Main extends AppCompatActivity {
 
         Button b1 = (Button) findViewById(R.id.button);
         b1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getBaseContext(), Realtime.class));
-                }
-            }
+                                  @Override
+                                  public void onClick(View v) {
+                                      startActivity(new Intent(getBaseContext(), Realtime.class));
+                                  }
+                              }
         );
     }
 }

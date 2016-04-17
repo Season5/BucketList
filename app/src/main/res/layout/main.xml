@@ -24,11 +24,12 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Begin your quest"
+        android:text="Click to begin your quest"
         android:id="@+id/button"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="@color/green"
         android:layout_below="@+id/imageView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black" />
 
     <ImageView
         android:layout_width="wrap_content"

@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.jijjy.grace.thebucket.Realtime">
+    tools:context="com.jijjy.grace.thebucket.Realtime"
+    android:background="@color/black">
 
     <EditText
         android:layout_width="wrap_content"
@@ -15,7 +16,8 @@
         android:id="@+id/messageText"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:hint="Send me a message" />
+        android:hint="What is your interest?"
+        android:textColor="@color/green" />
 
     <Button
         android:layout_width="wrap_content"
@@ -24,6 +26,8 @@
         android:id="@+id/sendButton"
         android:layout_below="@+id/messageText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp" />
+        android:layout_marginTop="65dp"
+        android:backgroundTint="@color/green"
+        android:textColor="#000" />
 
 </RelativeLayout>
